@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddbf3e75d553543969602f570cb0af1f, type: 3}
+  m_Name: NewTabSettings
+  m_EditorClassIdentifier: 
+  tabIdle: {fileID: 21300000, guid: f3f5ead99339dba459070da7cc68f134, type: 3}
+  tabActive: {fileID: 21300000, guid: e6a48030e16f9f54fb16517c1e961c75, type: 3}
+  tabHovered: {fileID: 21300000, guid: 07e79a2f761ca3b4b802f5ae9276ade7, type: 3}
