@@ -1,38 +1,47 @@
 # UISystemTask
 
-TabSystem
-Tab Group component - is a component that manages Tab Buttons and Tabs itself. 
-The logic is: Each Tab Button Activates Tab that belongs to button. We can implement more buttons to create more tabs.
-This component works with Buttons so it requires TabButtonEvents component.
+## TabSystem
+### Tab Group Component
+![Alt Text](assets/GIFs/TabSystem.gif)
 
-TabButtonEvenets component handles additional logic for buttons such as OnTabSelected and OnTabDeselected. In that case i was used for adding additional visualization for tab buttons on selection and diselection;
+The Tab Group component manages Tab Buttons and Tabs themselves. The logic is straightforward: Each Tab Button activates the corresponding Tab. Additional buttons can be implemented to create more tabs. This component works with Buttons and requires the TabButtonEvents component.
 
-TabButton component - is a component for tab buttons that simply handles evenets for click, mouse over etc.
+### TabButtonEvents Component
+The TabButtonEvents component handles additional logic for buttons, such as OnTabSelected and OnTabDeselected. It provides additional visualization for tab buttons upon selection and deselection.
 
-Task1 folder
-Here is relasiation of MVVM pattern for controlling animation speed of CanvasComponent.
+### TabButton Component
+The TabButton component is responsible for tab buttons, managing events for clicks, mouse overs, etc.
 
-Animation Speed View component - handles Slider change value
+## Task1 Folder
+![Alt Text](assets/GIFs/Animation.gif)
 
-AnimationSpeedViewModel - handles logic for updating Animation speed value;
+This folder contains the implementation of the MVVM pattern for controlling the animation speed of the CanvasComponent.
 
-The logic based on Animator but in further upgrade and optimization of this system this should be moved to Code animation.
+### Animation Speed View Component
+This component handles changes in the Slider's value.
 
-Task2 folder
-Here is realisation of Simple Factory pattern with simple ObjectPooling realisation for managing ItemBars in Vertical Scroll View
+### AnimationSpeedViewModel
+The AnimationSpeedViewModel manages the logic for updating the Animation speed value. The logic is based on the Animator but for future upgrades and system optimization, this should be migrated to Code animation.
 
-ItemBarFabric component - handles logic of Object Pooling for ItemBars and Initialisation of bars.
+## Task2 Folder
+![Alt Text](assets/GIFs/ScrollView.gif)
 
-ContentController component - is a component that handles logic of detecting of ItemBars that should be polled in or out
+This folder contains the implementation of the Simple Factory pattern with a basic Object Pooling mechanism for managing ItemBars in a Vertical Scroll View.
 
+### ItemBarFabric Component
+The ItemBarFabric component manages the Object Pooling for ItemBars and handles their initialization.
 
-Task3 folder
-Here is a realisation of MVC pattern that handles only Model and View, in current task that wasnt nessecary to use Controller so realisation was simplifed only with model and View
+### ContentController Component
+The ContentController component detects which ItemBars should be pooled in or out.
 
-CurrentTimeView component - Handles Courutine that updated current time.
+## Task3 Folder
+![Alt Text](assets/GIFs/Timer.gif)
 
-____
-Current realisation and optimization was made for Vertical view only. But still for further upgrades that would be made for handling both orientation and most of popular aspect ratio.
+This folder contains a realization of the MVC pattern that handles only the Model and View. In this particular task, using the Controller wasn't necessary, so the implementation was simplified to include only the model and view.
 
+### CurrentTimeView Component
+The CurrentTimeView component manages a Coroutine that updates the current time.
 
+___
 
+The current implementation and optimization were designed for the Vertical view only. However, for future upgrades, consideration will be given to handling both orientations and most popular aspect ratios.
